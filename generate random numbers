@@ -1,0 +1,15 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <ctime>
+#include <cstdlib>
+#include <chrono>
+
+// Function to generate a random vector of integers
+std::vector<int> generateRandomData(int size) {
+    std::vector<int> data(size);
+    for (int i = 0; i < size; ++i) {
+        data[i] = rand() % 10000; // Adjust the range as needed
+    }
+    return data;
+}
