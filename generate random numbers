@@ -26,3 +26,9 @@ void insertionSort(std::vector<int>& arr) {
         arr[j + 1] = key;
     }
 }
+
+// Quick Sort
+void quickSort(std::vector<int>& arr) {
+    if (arr.size() <= 1) return;
+    std::sort(arr.begin(), arr.end());
+}
